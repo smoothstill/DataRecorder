@@ -1,13 +1,13 @@
 package com.example.datarecorder;
 
-import android.app.DownloadManager;
+//import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
-import android.media.MediaScannerConnection;
+//import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
-import android.provider.MediaStore;
+//import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -141,11 +141,11 @@ public class RecordData {
             /*
             MediaScannerConnection.scanFile(context.getApplicationContext(), new String[] {Environment.getExternalStoragePublicDirectory(
                     Environment.DIRECTORY_DOWNLOADS).getAbsolutePath()}, null, null);
-
+            */
             Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
             intent.setData(Uri.fromFile(file));
             context.sendBroadcast(intent);
-            */
+
 
 
             Toast.makeText(context, "Saved to file datarecorder.csv in DataRecorder folder", Toast.LENGTH_LONG).show();

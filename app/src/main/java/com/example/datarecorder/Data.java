@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import android.annotation.SuppressLint;
+//import android.annotation.SuppressLint;
 import android.location.Location;
 
 /**
